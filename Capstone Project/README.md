@@ -11,18 +11,24 @@ The data used in this project comes from two CSV files, /content/pirvision_offic
 ## MODEL 
 Machine learning models for presence detection:
 
-Random Forest Classifier: An ensemble method that builds multiple decision trees and combines their predictions. It's known for its robustness and good performance on various tasks.
-Gradient Boosting Classifier: Another ensemble method that builds trees sequentially, where each new tree corrects the errors of the previous ones. It often achieves high accuracy.
-Neural Network (MLPClassifier): A basic feedforward neural network with one hidden layer. Neural networks are powerful for learning complex patterns in data.
-Convolutional Neural Network (CNN): A type of deep learning model particularly effective for processing data with a grid-like topology, such as images or, in our case, the spatial arrangement of PIR sensors.
-Recurrent Neural Network (RNN) - GRU: A type of deep learning model designed for sequential data. GRUs (Gated Recurrent Units) are a variation of LSTMs and are good at capturing temporal dependencies in the PIR sensor readings.
-Hybrid CNN-LSTM: A model that combines the strengths of both CNNs and LSTMs, using CNN layers to extract spatial features from the sensor data and LSTM layers to capture temporal dependencies.
-We chose these models to explore a range of approaches, from traditional machine learning to deep learning, to determine which performs best for this presence detection task.
+* **Random Forest Classifier:** An ensemble method that builds multiple decision trees and combines their predictions. It's known for its robustness and good performance on various tasks.
+
+* **Gradient Boosting Classifier:** Another ensemble method that builds trees sequentially, where each new tree corrects the errors of the previous ones. It often achieves high accuracy.
+
+* **Neural Network (MLPClassifier):** A basic feedforward neural network with one hidden layer. Neural networks are powerful for learning complex patterns in data.
+
+* **Convolutional Neural Network (CNN):** A type of deep learning model particularly effective for processing data with a grid-like topology, such as images or, in our case, the spatial arrangement of PIR sensors.
+
+* **Recurrent Neural Network (RNN) - GRU:** A type of deep learning model designed for sequential data. GRUs (Gated Recurrent Units) are a variation of LSTMs and are good at capturing temporal dependencies in the PIR sensor readings.
+
+* **Hybrid CNN-LSTM:** A model that combines the strengths of both CNNs and LSTMs, using CNN layers to extract spatial features from the sensor data and LSTM layers to capture temporal dependencies.
+
+These models explore a range of approaches, from traditional machine learning to deep learning, to determine which performs best for this presence detection task.
 
 ## HYPERPARAMETER OPTIMSATION
 For the traditional models (Random Forest, Gradient Boosting, and the basic Neural Network), default hyperparameters were used initially for evaluation.
 
-For the deep learning models (CNN, RNN, and Hybrid CNN-LSTM), we planned to use Bayesian Optimization to find the optimal hyperparameters. However, we encountered compatibility issues with the libraries (scikit-learn, scikit-optimize, and scikeras) needed for this process. Due to these environment configuration challenges, Bayesian Optimization could not be fully implemented in the current setup. The results presented are based on the models trained with the hyperparameters defined in the code cells.
+For the deep learning models (CNN, RNN, and Hybrid CNN-LSTM), I planned to use Bayesian Optimization to find the optimal hyperparameters. However, I encountered compatibility issues with the libraries (scikit-learn, scikit-optimize, and scikeras) needed for this process. Due to these environment configuration challenges, Bayesian Optimization could not be fully implemented in the current setup. The results presented are based on the models trained with the hyperparameters defined in the code cells.
 
 ## RESULTS
 Based on the initial evaluations without extensive hyperparameter tuning:
