@@ -33,16 +33,17 @@ For the deep learning models (CNN, RNN, and Hybrid CNN-LSTM), I planned to use B
 ## RESULTS
 Based on the initial evaluations without extensive hyperparameter tuning:
 
-Random Forest Accuracy: 1.0000
-Gradient Boosting Accuracy: 0.9963
-Neural Network Accuracy: 0.9996
-CNN Accuracy: 0.9864
-RNN (GRU) Accuracy: 0.9872
-Hybrid CNN-LSTM Accuracy: 0.9800
-All models achieved very high accuracy on the test dataset. The Random Forest and the basic Neural Network models showed perfect accuracy in this initial evaluation, while the deep learning models (CNN, RNN, and Hybrid) also performed very well, with accuracies above 0.98.
+* **Random Forest Accuracy:** `1.0000`
+* **Gradient Boosting Accuracy:** `0.9963`
+* **Neural Network Accuracy:** `0.9996`
+* **CNN Accuracy:** `0.9864`
+* **RNN (GRU) Accuracy:** `0.9872`
+* **Hybrid CNN-LSTM Accuracy:** `0.9800`
 
-Learnings:
+All models achieved very high accuracy on the test dataset. The Random Forest and the basic Neural Network models showed perfect or near-perfect accuracy in this initial evaluation, while the deep learning models (CNN, RNN, and Hybrid) also performed very well, with accuracies above 0.98.
 
-Even traditional machine learning models like Random Forest and a simple Neural Network can be highly effective for this presence detection task using PIR sensor data.
-The deep learning models also perform strongly, suggesting their potential for capturing complex patterns in the sensor data.
-The perfect or near-perfect accuracy on the test set might indicate that the test dataset is very similar to the training dataset, or that the task is highly separable with the given features. Further evaluation on more diverse datasets or with different cross-validation strategies would be beneficial to confirm the robustness of these results.
+### Learnings
+
+* Even traditional machine learning models like Random Forest and a simple Neural Network can be highly effective for this presence detection task using PIR sensor data.
+* The deep learning models also perform strongly, suggesting their potential for capturing complex patterns in the sensor data.
+* The perfect or near-perfect accuracy on the test set might indicate that the test dataset is very similar to the training dataset, or that the task is highly separable with the given features. Further evaluation on more diverse datasets or with different cross-validation strategies would be beneficial to confirm the robustness of these results.
