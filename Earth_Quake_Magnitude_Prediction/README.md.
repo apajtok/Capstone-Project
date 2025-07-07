@@ -1,5 +1,4 @@
-# Capstone-Project
-Frameworks used in this model:
+# Frameworks used in this model:
 - **pandas**: For data manipulation and analysis.  
 - **numpy**: For numerical operations.  
 - **scikit-learn (sklearn)**: For machine learning tasks, including model selection, training, evaluation, and anomaly detection.  
