@@ -1,7 +1,5 @@
 # Model Card
 
-See the [example Google model cards](https://modelcards.withgoogle.com/model-reports) for inspiration.
-
 ## Model Description
 
 **Input:** The model takes as input time-series data from 55 passive infrared (PIR) sensors, along with temperature readings. The PIR sensor data is preprocessed using `StandardScaler` to normalize the feature values.
