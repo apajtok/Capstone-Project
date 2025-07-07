@@ -32,7 +32,11 @@ All models achieved very high accuracy on the test dataset. The Random Forest an
 
 ## Limitations
 
+Based on the datasheet, the main limitations of the dataset are:
 
+Limited Generalizability: The data was collected exclusively in residential and office environments. This means that a model trained on this dataset may not perform well in other types of spaces, such as industrial or retail settings, without additional data.
+
+Potential for Bias: The high-fidelity sensor data might have captured movement patterns that are unique to the specific individuals observed during the collection period. A model could inadvertently learn these individual-specific patterns instead of general human activity, which could bias its performance when faced with new, unseen individuals.
 
 ## Trade-offs
 
