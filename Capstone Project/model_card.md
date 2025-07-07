@@ -29,3 +29,11 @@ Based on the initial evaluations without extensive hyperparameter tuning:
 * **Hybrid CNN-LSTM Accuracy:** `0.9800`
 
 All models achieved very high accuracy on the test dataset. The Random Forest and the basic Neural Network models showed perfect or near-perfect accuracy in this initial evaluation, while the deep learning models (CNN, RNN, and Hybrid) also performed very well, with accuracies above 0.98.
+
+## Limitations
+
+Outline the limitations of your model.
+
+## Trade-offs
+
+Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
