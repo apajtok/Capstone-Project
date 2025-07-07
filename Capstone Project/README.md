@@ -1,14 +1,15 @@
-PROJECT TITLE
-Presence Detection using PIR Sensors and Machine Learning
+# Presence Detection using PIR Sensors and Machine Learning
 
-NON-TECHNICAL EXPLANATION OF YOUR PROJECT
+
+## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
+
 This project aims to create a smart system that can tell if someone is in a room just by using a special sensor called a PIR (Passive Infrared) sensor. Think of it like a motion detector, but smarter. Based on the sensor data, our system can figure out if a room is empty, if someone is sitting still, or if they are moving around. This helps automate things like turning lights or heating on and off, saving energy and making buildings more efficient. We used data collected from two different time periods in an office to train and test our models.
 
-DATA
+## DATA
 The data used in this project comes from two CSV files, /content/pirvision_office_dataset1.csv and /content/pirvision_office_dataset2.csv. These datasets contain readings from 55 PIR sensors, along with a temperature reading, a timestamp, and a 'Label' indicating the presence state (empty, stationary, or active motion). The first dataset (df_office1) was used for training the models, and the second dataset (df_office2) was used for testing to evaluate how well the models generalize to new data.
 
-MODEL
-We are comparing several machine learning models for presence detection:
+## MODEL 
+Machine learning models for presence detection:
 
 Random Forest Classifier: An ensemble method that builds multiple decision trees and combines their predictions. It's known for its robustness and good performance on various tasks.
 Gradient Boosting Classifier: Another ensemble method that builds trees sequentially, where each new tree corrects the errors of the previous ones. It often achieves high accuracy.
@@ -18,12 +19,12 @@ Recurrent Neural Network (RNN) - GRU: A type of deep learning model designed for
 Hybrid CNN-LSTM: A model that combines the strengths of both CNNs and LSTMs, using CNN layers to extract spatial features from the sensor data and LSTM layers to capture temporal dependencies.
 We chose these models to explore a range of approaches, from traditional machine learning to deep learning, to determine which performs best for this presence detection task.
 
-HYPERPARAMETER OPTIMISATION
+## HYPERPARAMETER OPTIMSATION
 For the traditional models (Random Forest, Gradient Boosting, and the basic Neural Network), default hyperparameters were used initially for evaluation.
 
 For the deep learning models (CNN, RNN, and Hybrid CNN-LSTM), we planned to use Bayesian Optimization to find the optimal hyperparameters. However, we encountered compatibility issues with the libraries (scikit-learn, scikit-optimize, and scikeras) needed for this process. Due to these environment configuration challenges, Bayesian Optimization could not be fully implemented in the current setup. The results presented are based on the models trained with the hyperparameters defined in the code cells.
 
-RESULTS
+## RESULTS
 Based on the initial evaluations without extensive hyperparameter tuning:
 
 Random Forest Accuracy: 1.0000
@@ -34,7 +35,7 @@ RNN (GRU) Accuracy: 0.9872
 Hybrid CNN-LSTM Accuracy: 0.9800
 All models achieved very high accuracy on the test dataset. The Random Forest and the basic Neural Network models showed perfect accuracy in this initial evaluation, while the deep learning models (CNN, RNN, and Hybrid) also performed very well, with accuracies above 0.98.
 
-From these results, we can learn that:
+Learnings:
 
 Even traditional machine learning models like Random Forest and a simple Neural Network can be highly effective for this presence detection task using PIR sensor data.
 The deep learning models also perform strongly, suggesting their potential for capturing complex patterns in the sensor data.
