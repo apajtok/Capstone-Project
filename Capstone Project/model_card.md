@@ -19,6 +19,13 @@
 
 The models were trained on `df_office1` and evaluated on `df_office2`. The performance was measured using accuracy and a classification report.
 
-- **Random Forest:**
-  - Accuracy: 1.0000
-  - Classification Report:
+Based on the initial evaluations without extensive hyperparameter tuning:
+
+* **Random Forest Accuracy:** `1.0000`
+* **Gradient Boosting Accuracy:** `0.9963`
+* **Neural Network Accuracy:** `0.9996`
+* **CNN Accuracy:** `0.9864`
+* **RNN (GRU) Accuracy:** `0.9872`
+* **Hybrid CNN-LSTM Accuracy:** `0.9800`
+
+All models achieved very high accuracy on the test dataset. The Random Forest and the basic Neural Network models showed perfect or near-perfect accuracy in this initial evaluation, while the deep learning models (CNN, RNN, and Hybrid) also performed very well, with accuracies above 0.98.
