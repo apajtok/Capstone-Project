@@ -66,7 +66,8 @@
 ### Distribution
 
 * **How has the dataset already been distributed?**
-    The dataset is distributed via the UCI Machine Learning Repository.
+    The dataset is distributed via the UCI Machine Learning Repository:
+https://archive.ics.uci.edu/dataset/1101/pirvision_fog_presence_detection.
 
 * **Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?**
     The provided information does not specify a license or terms of use. Datasets on the UCI repository are typically available for academic and research purposes.
