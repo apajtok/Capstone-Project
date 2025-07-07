@@ -1,7 +1,7 @@
 # Presence Detection using PIR Sensors and Machine Learning
 
 
-## EXPLANATION
+## NON-TECHNICAL EXPLANATION
 
 This project aims to create a smart system that can tell if someone is in a room just by using a special sensor called a PIR (Passive Infrared) sensor. Think of it like a motion detector, but smarter. Based on the sensor data, our system can figure out if a room is empty, if someone is sitting still, or if they are moving around. This helps automate things like turning lights or heating on and off, saving energy and making buildings more efficient. We used data collected from two different time periods in an office to train and test our models.
 
