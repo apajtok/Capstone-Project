@@ -32,6 +32,10 @@ All models achieved very high accuracy on the test dataset. The Random Forest an
 
 ## Limitations
 
+
+
+## Trade-offs
+
 Issue Encountered: Bayesian Optimization with Keras Models
 During the attempt to perform Bayesian Optimization for hyperparameter tuning of the Keras CNN model using scikit-optimize (skopt) and scikeras, we encountered an AttributeError: 'super' object has no attribute '__sklearn_tags__'.
 
@@ -53,7 +57,3 @@ Checking the documentation of scikeras and scikit-optimize for recommended or re
 Searching online resources (e.g., GitHub issues, forums) for reported compatibility issues and their solutions for the specific library versions.
 Using the %pip install command to install a set of library versions that are known to be compatible.
 Since this is an environment configuration issue, it cannot be fixed by simply modifying the code within the notebook cells. Manual intervention to manage library versions is necessary to enable Bayesian Optimization with Keras models in this environment.
-
-## Trade-offs
-
-Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
