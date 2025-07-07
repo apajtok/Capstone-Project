@@ -3,7 +3,7 @@
 
 ## NON-TECHNICAL EXPLANATION
 
-This project aims to create a smart system that can tell if someone is in a room just by using a special sensor called a PIR (Passive Infrared) sensor. Think of it like a motion detector, but smarter. Based on the sensor data, our system can figure out if a room is empty, if someone is sitting still, or if they are moving around. This helps automate things like turning lights or heating on and off, saving energy and making buildings more efficient. We used data collected from two different time periods in an office to train and test our models.
+This project aims to create a smart system that can tell if someone is in a room just by using a special sensor called a PIR (Passive Infrared) sensor. Think of it like a motion detector, but smarter. Based on the sensor data, our system can figure out if a room is empty, if someone is sitting still, or if they are moving around. This helps automate things like turning lights or heating on and off, saving energy and making buildings more efficient. The data was collected from two different time periods in an office to train and test the models.
 
 ## DATA
 The data used in this project comes from two CSV files, /content/pirvision_office_dataset1.csv and /content/pirvision_office_dataset2.csv. These datasets contain readings from 55 PIR sensors, along with a temperature reading, a timestamp, and a 'Label' indicating the presence state (empty, stationary, or active motion). The first dataset (df_office1) was used for training the models, and the second dataset (df_office2) was used for testing to evaluate how well the models generalize to new data.
